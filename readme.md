@@ -9,11 +9,12 @@ Zombie events are events that are raised for elements that have been removed fro
 
 What Is Event Delegation?
 -------------------------
-Simply put, event delegation is the practice of attaching event handlers to DOM elements that are parents to the actual DOM elements raising the events (the event targets) which juxtaposes the practice of attaching event handlers directly onto the DOM elements that actually raise the events (the event targets).
+Simply put, event delegation is the practice of attaching event handlers to DOM elements that are parents to the actual DOM elements raising the events (the event targets) as opposed to which juxtaposes the practice of attaching event handlers directly onto the DOM elements that actually raise the events (the event targets).
+
+#### Event Delegation Example
 
 As an example, suppose we have a list of links. Instead of attaching a click event handler to each li element we instead attach all of the click event handlers to a parent tag of the li elements, such as the li elements parent ul element, or to a div element serving as a container, or even to the body element itself. That is, in a nutshell, what event delegation is.
 
-#### Event Delegation Example
 First, the markup
 
     <div id="page_container">
