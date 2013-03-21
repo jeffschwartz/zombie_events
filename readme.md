@@ -45,7 +45,7 @@ In the example markup above, a list is created consisting of 3 anchor tages, eac
 Delegated events have the advantage that they can process events from descendant elements that are added to the document at a later time which would be a commaon need in dynamic pages, specifically single page applications, where dom elements are added to and removed in response to the user's interaction with the page.
 
 ### The Disadvantage Of Using Event Delegation Are Zombie Events
-While the benefits of using event delegation far outweigh its disadvantages, you do have to insure that when elements are removed from the page that any delegated events associated with those elements are removed as well, and that's brings us full circle and back to Zombie events.
+While the benefits of using event delegation far outweigh its disadvantages, you do have to insure that when elements are removed from the page that any delegated events associated with those elements are removed as well. If these aren't removed then the result will be Zombie events.
 
 What You Will Find In This Repo
 -------------------------------
