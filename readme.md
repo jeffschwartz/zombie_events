@@ -1,7 +1,7 @@
 Notes:
-1. All the example scripts mentioned in this tutorial can be found on in this Githum repo.
-2. Furthermore, all the example scripts in this tutorial use jQuery. While jQuery isn't the cause of Zombie Events, jQuery does make the code simpler to unserstand and demonstrate. In addition, all the Views in the examples are rendered using Underscore templates.
-3. Finally, to keep the concepts generic and simpler to understand I created a little 'micro' View ('V' like in 'MVC') framework of my own using jQuery and UnderscoreJS.
+1. All the example scripts mentioned in this tutorial can be found on this Githum repo.
+2. Furthermore, all the example scripts in this tutorial use jQuery. While jQuery isn't the cause of Zombie events, jQuery does make the code simpler to unserstand and demonstrate. In addition, all the views in the examples are rendered using UnderscoreJS templates.
+3. Finally, to keep the concepts generic and simpler to understand, I created a little 'micro' View ('V' like in 'MVC') framework of my own using jQuery and UnderscoreJS.
 
 What Are Zombie Events?
 =======================
@@ -11,7 +11,7 @@ What Is Event Delegation?
 -------------------------
 Simply put, event delegation is the practice of attaching event handlers to DOM elements that are parents to the actual DOM elements raising the events (the event targets) which juxtaposes the practice of attaching event handlers directly onto the DOM elements that actually raise the events (the event targets).
 
-As an example, suppose we have a list of links. Instead of attaching a click event handler to each li element we instead attach all of them to the ul element or some even to a parent tag of the ul element such as a div element serving as a container or even to the body element itself. That is, in a nutshell, what event delegation is.
+As an example, suppose we have a list of links. Instead of attaching a click event handler to each li element we instead attach all of the click event handlers to a parent tag of the li elements, such as the li elements parent ul element, or to a div element serving as a container, or even to the body element itself. That is, in a nutshell, what event delegation is.
 
 #### Event Delegation Example
 First, the markup
