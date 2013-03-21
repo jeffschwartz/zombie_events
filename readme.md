@@ -47,8 +47,6 @@ Delegated events have the advantage that they can process events from descendant
 ### The Disadvantage Of Using Event Delegation Are Zombie Events
 While the benefits of using event delegation far outweigh its disadvantages, you do have to insure that when elements are removed from the page that any delegated events associated with those elements are removed as well, and that's brings us full circle and back to Zombie events.
 
-#### Example Event Delegation Code That Causes Zombie Events
-
 What You Will Find In This Repo
 -------------------------------
 I've writen two scripts (see below for each script's name along with its descriptions and the name of the html file that you can use to load and run it), one that I purposely coded to demonstrate how Zombie events are created and another script which is identical to the first script but for one small, simple change to the code that effectively eliminates the Zombie events. My goal was to present a common use case that many front-end developers encounter when creating dynamic pages which is replacing some elements of the DOM with other elements in response to some user action with the page, such as a mouse click on a button.
