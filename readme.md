@@ -30,7 +30,7 @@ and then the JavaScript
         'use strict';
         $( function () {
             $( '#page_container' ).on( 'click', function ( event ) {
-                // we only are interested in the event if it was raised by an li element with a class of 'somelist'
+                // we only are interested in the event if it was raised by a span element with a class of 'somelist'
                 var $eventTarget = $( event.target );
                 if ( $eventTarget.attr( 'class' ) === 'somelist' ) {
                     window.alert( $eventTarget.attr( 'class' ) );
