@@ -5,7 +5,7 @@ Notes:
 
 What Are Zombie Events?
 =======================
-Zombie events are the result of not removing event handlers when dynamically adding and removing content from the DOM. In addition, they are the result of using event delegation for event handlers.
+Zombie events are events that are raised for elements that have been removed from the DOM and they are the result of using event delegation for event handlers.
 
 What Is Event Delegation?
 -------------------------
